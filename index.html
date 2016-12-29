@@ -1,0 +1,82 @@
+<html>
+<header>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <meta charset=utf-8 />
+  <title>Potomac River Basin Atlas</title>
+  <link href='https://www.mapbox.com/base/latest/base.css' rel='stylesheet' />
+  <script src='https://api.mapbox.com/mapbox-gl-js/v0.29.0/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v0.29.0/mapbox-gl.css' rel='stylesheet' />
+  <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v2.0.1/mapbox-gl-geocoder.css' type='text/css' />
+  <link rel="stylesheet" href="style.css"/>
+</header>
+
+<body>
+<!--DO NOT CHANGE ANYTHING IN THIS FIRST SECTION OF HTML BODY-->
+
+<!-- HEADER FOR DESKTOP -->
+  <div class="header"> 
+      <img alt="Great Falls" src="elements/cumminsGreat_Falls_p4a-Large.jpg">
+	  <div class="header-overlay">
+	      <h1 class="site-title">Potomac River Basin Atlas</h1>
+      </div>
+      <img class="logo" alt="ICPRB Logo" src="elements/logo.png" width="" height="">
+      <div class="navigation">
+	      <ul>
+		    <li><a href="https://www.potomacriver.org/about-us/">About ICPRB</a></li>
+			<li><a href="https://www.potomacriver.org/resources/">Resources</a></li>
+			<li><a href="https://www.potomacriver.org/resources/maps/">Maps</a></li>
+		  </ul>
+	  </div>
+	  <div class="social">
+	      <div class="social-text">Interstate Commission on the Potomac River Basin</div>
+	  	  <a href="https://www.facebook.com/PotomacRiverCommission" target="_blank"><img class="social-fb" alt="Facebook" src="elements/icons/facebook.png" width="15px" height="20px"></a>
+		  <a href="https://www.linkedin.com/company-beta/8603011?pathWildcard=8603011" target="_blank"><img class="social-linkedin" alt="LinkedIn" src="elements/icons/linkedin.png" width="20px" height="20px"></a>
+		  <a href="https://twitter.com/ICPRB" target="_blank"><img class="social-twitter" alt="Twitter" src="elements/icons/twitter.png" width="15px" height="15px"></a>
+		  <a href="https://www.instagram.com/icprb/" target="_blank"><img class="social-insta" alt="Instagram" src="elements/icons/instagram.png" width="20px" height="20px"></a>
+	  </div>
+  </div>
+<!-- END HEADER FOR DESKTOP -->
+
+<!-- HEADER FOR MOBILE -->
+
+<!-- END HEADER FOR MOBILE -->
+
+<!--END FIRST SECTION OF HTML BODY-->
+
+<!--UPDATE ELEMENTS PER NOTES BELOW FOR EACH NEW MAP CREATED-->
+  
+  <div class="row">
+  
+  <div class="col-2 sidebar">
+      <div class="sidebar-title-block">Sub-Watersheds</div><!--Add title of map here-->
+	  <div class="sidebar-title-text">Sub-watersheds of the Potomac River basin.</div>
+      <img class="image" alt="Chesapeake Bay" src="elements/ChesBay_Basins.jpg" width="" height="">
+<!--	  <div id="link-group">
+        <div class="label">
+          <input type="radio" name="layer" value="layer 1"> Layer 1<br>
+	      <input type="radio" name="layer" value="layer 2"> Layer 2<br>
+	      <input type="radio" name="layer" value="layer 3"> Layer 3<br>
+	      <input type="radio" name="layer" value="layer 4"> Layer 4<br>
+	      <input type="radio" name="layer" value="layer 5"> Layer 5<br>
+	    </div>
+      </div> -->	  
+	  <div class="sidebar-text-block">
+	    <div class="sidebar-text">Use this map to search for specific areas within the Potomac River basin. Learn more about the basin, its people, its water, and its land on our <a href='https://www.potomacriver.org/potomac-basin-facts/' target=_blank>Potomac Basin Facts</a> page.</p></div>	  
+      </div>
+  </div>	  
+
+<!--END SIDEBAR-->
+  
+  <div id="map" class="col-6"></div>
+  
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.9.0/lodash.min.js"></script>
+  <script src= 'https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v2.0.1/mapbox-gl-geocoder.js'></script>  
+  <script src= 'script.js'></script>
+  
+
+
+</body>
+
+</html>
