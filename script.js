@@ -16,7 +16,7 @@ var map = new mapboxgl.Map({
 	minZoom: [7.0],
 });
 
-var subwatershed_template_string = "<% if (watershed.HUC_NAME) { %><p><strong> <%= watershed.HUC_NAME%> </strong></p><% } %>";
+var subwatershed_template_string = "<% if (watershed.HUC_NAME) { %><p><strong> <%= watershed.HUC_NAME%> </strong></p><% } %><% if (watershed.HUC_CODE) { %><p>To learn more about this watershed, please visit EPA's Surf your Watershed <a href='https://cfpub.epa.gov/surf/locate/index.cfm' target=_blank>directory</a><br> and search using the 8 digit USGS hydrologic cataloging code: <%= watershed.HUC_CODE%></p><% } %>";
 var subwatershed_template = _.template(subwatershed_template_string, {variable: 'watershed'});
 
 map.on('load', function() {
